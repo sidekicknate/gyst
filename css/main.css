@@ -1,0 +1,94 @@
+/* ----Font Import and Styling---- */
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,700i');
+
+body {
+  font-family: 'IBM Plex Sans', Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'IBM Plex Sans', Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  margin-top: 0;
+  margin-bottom: -10px;
+}
+
+li {
+  list-style: none;
+  list-style-position: inside;
+}
+
+/* ----Layout and Clearfix---- */
+.container {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* ----Navbar---- */
+.nav-wrapper {
+  width: 100%;
+  backgorund-color: white;
+  height: 60px;
+}
+
+.menu {
+  float: right;
+  margin-right: 30px;
+}
+
+.menu li {
+  float: left;
+  margin-left: 12px;
+}
+
+.menu a {
+  font-family: 'IBM Plex Sans', Helvetica, sans-serif;
+  font-weight: 700;
+  font-style: italic;
+  color: #171717;
+  text-decoration: none;
+}
+
+.logo {
+  float: left;
+  height: 100%;
+}
+
+/* ----Body Styles---- */
+
+.full-width-banner {
+  width: 100%;
+  background-image: url();
+  padding: 3em 0;
+}
+
+/* ----Footer---- */
+
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 60px;
+}
+
+.copyright {
+  text-align: left;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+@media (min-width: 789px) {
+  .container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
