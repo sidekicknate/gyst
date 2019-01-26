@@ -1,4 +1,5 @@
-/* ----Font Import and Styling---- */
+/* ----Font Import and Global Styling---- */
+
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,700i');
 
 body {
@@ -19,6 +20,60 @@ li {
   list-style-position: inside;
 }
 
+button {
+
+}
+
+/* ----Colors---- */
+
+.red {
+  color: ;
+}
+
+.red-bg {
+  background-color:red;
+}
+
+.blue {
+  color:
+}
+
+.blue-bg {
+  background-color:
+}
+
+.yellow {
+  color:
+}
+
+.yellow-bg {
+  background-color:
+}
+
+.green {
+  color:
+}
+
+.green-bg {
+  background-color:
+}
+
+.purple {
+  color:
+}
+
+.purple-bg {
+  background-color:
+}
+
+.white {
+  color: white;
+}
+
+.grey-bg {
+  background-color:
+}
+
 /* ----Layout and Clearfix---- */
 .container {
   padding-left: 1em;
@@ -32,13 +87,14 @@ li {
 }
 
 /* ----Navbar---- */
+
 .nav-wrapper {
   width: 100%;
-  backgorund-color: white;
   height: 60px;
 }
 
 .menu {
+  display: inline-block;
   float: right;
   margin-right: 30px;
 }
@@ -65,8 +121,19 @@ li {
 
 .full-width-banner {
   width: 100%;
-  background-image: url();
-  padding: 3em 0;
+  background-image: url(images/gyst-logo.png);
+  background-size: cover;
+  padding: 3rem 0;
+}
+
+.text-on-bg {
+  background-color: white;
+  padding: 2rem;
+  max-width: 400px;
+}
+
+.quote {
+
 }
 
 /* ----Footer---- */
@@ -82,6 +149,10 @@ li {
   text-align: left;
 }
 
+.newsletter {
+
+}
+
 /* =================================
   Media Queries
 ==================================== */
@@ -92,3 +163,7 @@ li {
     margin: 0 auto;
   }
 }
+
+/* =================================
+  CSS Attribute Selector Styles
+==================================== */
