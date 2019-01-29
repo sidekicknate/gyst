@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans:200,700i');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'IBM Plex Sans', Helvetica, sans-serif;
   font-weight: 200;
@@ -20,50 +24,60 @@ li {
   list-style-position: inside;
 }
 
-button {
+.btn {
+  display: inline-block;
+  background-color: white;
+  border-radius: 50px;
+  border-color: transparent;
+  min-width: 100px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+}
 
+.btn:hover {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 /* ----Colors---- */
 
 .red {
-  color: ;
+  color: #F45B69;
 }
 
 .red-bg {
-  background-color:red;
+  background-color: #F45B69;
 }
 
 .blue {
-  color:
+  color: #7EE8FA;
 }
 
 .blue-bg {
-  background-color:
+  background-color: #7EE8FA;
 }
 
 .yellow {
-  color:
+  color: #F9F88B;
 }
 
 .yellow-bg {
-  background-color:
+  background-color: #F9F88B;
 }
 
 .green {
-  color:
+  color: #7FFFD4;
 }
 
 .green-bg {
-  background-color:
+  background-color: #7FFFD4;
 }
 
 .purple {
-  color:
+  color: #907AD6;
 }
 
 .purple-bg {
-  background-color:
+  background-color: #907AD6;
 }
 
 .white {
@@ -71,7 +85,7 @@ button {
 }
 
 .grey-bg {
-  background-color:
+  background-color: #F5F5F5;
 }
 
 /* ----Layout and Clearfix---- */
@@ -101,7 +115,8 @@ button {
 
 .menu li {
   float: left;
-  margin-left: 12px;
+  margin-left: 15px;
+  font-size: 1rem;
 }
 
 .menu a {
@@ -121,32 +136,48 @@ button {
 
 .full-width-banner {
   width: 100%;
-  background-image: url(images/gyst-logo.png);
+  //background-image: url(../images/gyst-logo.png);
   background-size: cover;
-  padding: 3rem 0;
 }
 
 .text-on-bg {
-  background-color: white;
-  padding: 2rem;
+  text-align: center;
+  margin: 0 auto;
+  padding: 3rem 0rem;
   max-width: 400px;
 }
 
-.quote {
+.cat-tab {
+  padding: 1rem;
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0,0,0,.15);
+}
 
+.blog-block {
+  flex: auto;
+  flex-direction: row;
+}
+
+.blog-fp {
+  max-width: 80vw;
+}
+
+.quote {
+  margin: 2rem auto;
+  text-align: center;
 }
 
 /* ----Footer---- */
 
 .footer {
-  position: absolute;
-  right: 0;
-  bottom: 0;
+  position: relative;
   height: 60px;
 }
 
 .copyright {
-  text-align: left;
+  text-align: right;
 }
 
 .newsletter {
